@@ -26,6 +26,9 @@ class AvestanService:
     ) -> str:
         """Method for transliteration of avestan characters to latin"""
 
+        # Sanitze word
+        word = self.sanitize(word=word)
+
         # Get Avestan alphabet with latin equivalents
         alphabet_with_trans: Tuple[str, str] = (
             await self.db_session.execute(
@@ -94,3 +97,7 @@ class AvestanService:
 
         if invalid_characters:
             raise AlphabetBulkException(status_code=status.HTTP_400_BAD_REQUEST, errors=invalid_characters)
+
+    def sanitize(self, word: str) -> str:
+        """Delete all whitespaces and special characters"""
+        return ''.join(c for c in word if c.isalnum())
