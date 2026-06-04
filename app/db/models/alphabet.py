@@ -25,7 +25,6 @@ class WrittingDirection(str, enum.Enum):
     TTB = "ttb"
 
 
-
 class Alphabet(Base):
     """ Alphabet table"""
     __tablename__ = "alphabets"

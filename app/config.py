@@ -29,10 +29,10 @@ class Settings(BaseSettings):
         f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
     )
     POSTGRES_TEST_URL: str = (
-        f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/labgears_test"
+        f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/alphabet_converter_test"
     )
     POSTGRES_TEST_ASYNC_URL: str = (
-        f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/labgears_test"
+        f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/alphabet_converter_test"
     )
     ROOT_DIR: DirectoryPath = Field(default_factory=lambda: Path(__file__).parent.resolve())
 

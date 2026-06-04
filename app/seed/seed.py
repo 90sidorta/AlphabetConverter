@@ -56,6 +56,7 @@ avestan_alphabet = AlphabetFactory(
     writting_system=WrittingSystem.ALPHABET,
     writting_direction=WrittingDirection.RTL,
     script_family=aramaic_script_family,
+    name="Avestan"
 )
 
 print("Creating transliteration system")
