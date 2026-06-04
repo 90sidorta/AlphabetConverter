@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+jinja2
+python-multipart
+sqlalchemy
+asyncpg
+alembic
+pydantic-settings
+psycopg2-binary
+factory-boy
+faker
+sqlalchemy_utils

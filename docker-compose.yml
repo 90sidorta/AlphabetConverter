@@ -1,0 +1,37 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alphabet_converter_app
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./app:/app/app
+    env_file:
+      - .env
+    depends_on:
+      - db
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8081 --reload
+
+  db:
+    image: postgres:16
+    container_name: alphabet_converter_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    env_file:
+    - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9000:8080
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

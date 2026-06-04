@@ -1,0 +1,68 @@
+avestan_to_latin_alphabet = {
+    '𐬀': {'hoffmann': 'a', 'ipa': '/a/', 'polish_technical': 'a'},
+    '𐬁': {'hoffmann': 'ā', 'ipa': '/aː/', 'polish_technical': 'a'},
+    '𐬂': {'hoffmann': 'ȧ', 'ipa': '/ɒ/', 'polish_technical': 'o'},
+    '𐬃': {'hoffmann': 'ā̊', 'ipa': '/ɒː/', 'polish_technical': 'o'},
+    '𐬄': {'hoffmann': 'ą', 'ipa': '/ã/', 'polish_technical': 'ą'},
+    '𐬅': {'hoffmann': 'ą̇', 'ipa': '/ã:/', 'polish_technical': 'ą'},
+    '𐬆': {'hoffmann': 'ə', 'ipa': '/ə/', 'polish_technical': 'e'},
+    '𐬇': {'hoffmann': 'ə̄', 'ipa': '/əː/', 'polish_technical': 'e'},
+    '𐬈': {'hoffmann': 'e', 'ipa': '/e/', 'polish_technical': 'e'},
+    '𐬉': {'hoffmann': 'ē', 'ipa': '/eː/', 'polish_technical': 'e'},
+    '𐬊': {'hoffmann': 'o', 'ipa': '/ɔ/', 'polish_technical': 'o'},
+    '𐬋': {'hoffmann': 'ō', 'ipa': '/oː/', 'polish_technical': 'o'},
+    '𐬌': {'hoffmann': 'i', 'ipa': '/ɪ/', 'polish_technical': 'i'},
+    '𐬍': {'hoffmann': 'ī', 'ipa': '/iː/', 'polish_technical': 'i'},
+    '𐬎': {'hoffmann': 'u', 'ipa': '/ʊ/', 'polish_technical': 'u'},
+    '𐬏': {'hoffmann': 'ū', 'ipa': '/uː/', 'polish_technical': 'u'},
+    '𐬐': {'hoffmann': 'k', 'ipa': '/k/', 'polish_technical': 'k'},
+    '𐬑': {'hoffmann': 'x', 'ipa': '/x/', 'polish_technical': 'ch'},
+    '𐬒': {'hoffmann': 'x́', 'ipa': '/xʲ/, /ç/', 'polish_technical': 'chj'},
+    '𐬓': { 'hoffmann': 'xᵛ', 'ipa': '/xʷ/', 'polish_technical': 'chw'},
+    '𐬔': {'hoffmann': 'g', 'ipa': '/ɡ/', 'polish_technical': 'g'},
+    '𐬕': {'hoffmann': 'ġ', 'ipa': '/ɡʲ/, /ɟ/', 'polish_technical': 'gj'},
+    '𐬖': {'hoffmann': 'γ', 'ipa': '/ɣ/', 'polish_technical': 'gh'},
+    '𐬗': {'hoffmann': 'c', 'ipa': '/t͡ʃ/', 'polish_technical': 'cz'},
+    '𐬘': {'hoffmann': 'j', 'ipa': '/d͡ʒ/', 'polish_technical': 'dż'},
+    '𐬙': {'hoffmann': 't', 'ipa': '/t/', 'polish_technical': 't'},
+    '𐬚': {'hoffmann': 'θ', 'ipa': '/θ/', 'polish_technical': 'th'},
+    '𐬛': {'hoffmann': 'd', 'ipa': '/d/', 'polish_technical': 'd'},
+    '𐬜': {'hoffmann': 'δ', 'ipa': '/ð/', 'polish_technical': 'dh'},
+    '𐬝': {'hoffmann': 't̰', 'ipa': '/t̚/', 'polish_technical': 't'},
+    '𐬞': {'hoffmann': 'p', 'ipa': '/p/', 'polish_technical': 'p'},
+    '𐬟': {'hoffmann': 'f', 'ipa': '/f/', 'polish_technical': 'f'},
+    '𐬠': {'hoffmann': 'b', 'ipa': '/b/', 'polish_technical': 'b'},
+    '𐬡': {'hoffmann': 'β', 'ipa': '/β/', 'polish_technical': 'bh'},
+    '𐬢': {'hoffmann': 'ŋ', 'ipa': '/ŋ/', 'polish_technical': 'ng'},
+    '𐬣': {'hoffmann': 'ŋ́', 'ipa': '/ŋʲ/', 'polish_technical': 'ngj'},
+    '𐬤': {'hoffmann': 'ŋᵛ', 'ipa': '/ŋʷ/', 'polish_technical': 'ngw'},
+    '𐬥': {'hoffmann': 'n', 'ipa': '/n/', 'polish_technical': 'n'},
+    '𐬦': {'hoffmann': 'ń', 'ipa': '/ɲ/', 'polish_technical': 'ń'},
+    '𐬧': {'hoffmann': 'ṇ', 'ipa': '/ŋ/', 'polish_technical': 'n'},
+    '𐬨': {'hoffmann': 'm', 'ipa': '/m/', 'polish_technical': 'm'},
+    '𐬩': {'hoffmann': 'm̨', 'ipa': '/m̥/', 'polish_technical': 'mh'},
+    '𐬪': {'hoffmann': 'ẏ', 'ipa': '/j/', 'polish_technical': 'j'},
+    '𐬫': {'hoffmann': 'y', 'ipa': '/j/', 'polish_technical': 'j'},
+    '𐬌𐬌': {'hoffmann': 'ii', 'ipa': '/ii̯/', 'polish_technical': 'ij'},
+    '𐬬': {'hoffmann': 'v', 'ipa': '/v/', 'polish_technical': 'w'},
+    '𐬎𐬎': {'hoffmann': 'uu', 'ipa': '/uu̯/', 'polish_technical': 'w'},
+    '𐬭': {'hoffmann': 'r', 'ipa': '/r/', 'polish_technical': 'r'},
+    '𐬮': {'hoffmann': 'l', 'ipa': '/l/', 'polish_technical': 'l'},
+    '𐬯': {'hoffmann': 's', 'ipa': '/s/', 'polish_technical': 's'},
+    '𐬰': {'hoffmann': 'z', 'ipa': '/z/', 'polish_technical': 'z'},
+    '𐬱': {'hoffmann': 'š', 'ipa': '/ʃ/', 'polish_technical': 'sz'},
+    '𐬲': {'hoffmann': 'ž', 'ipa': '/ʒ/', 'polish_technical': 'ż'},
+    '𐬳': {'hoffmann': 'š́', 'ipa': '/ɕ/', 'polish_technical': 'ś'},
+    '𐬴': {'hoffmann': 'ṣ̌', 'ipa': '/ʂ/', 'polish_technical': 'sz'},
+    '𐬵': {'hoffmann': 'h', 'ipa': '/h/', 'polish_technical': 'h'},
+}
+
+latin_to_avestan_alphabet = {
+    v["hoffmann"]: k for k, v in avestan_to_latin_alphabet.items()
+}
+
+avestan_sequences = ['𐬌𐬌', '𐬎𐬎']
+latin_sequences = ['ii', 'uu']
+
+avestant_letters = [ac for ac in avestan_to_latin_alphabet.keys()]
+latin_letters = [lc for lc in latin_to_avestan_alphabet.keys()]
