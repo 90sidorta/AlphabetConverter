@@ -8,3 +8,5 @@ class LIMITS:
     word_max_length: int = 1000
     script_family_name_min: int = 1
     script_family_name_max: int = 500
+    alphabet_name_min: int = 1
+    alphabet_name_max: int = 1000

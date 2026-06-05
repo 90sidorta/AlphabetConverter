@@ -62,7 +62,7 @@ async def read_script_family(
     responses={status.HTTP_422_UNPROCESSABLE_CONTENT: {"model": AlphabetBulkError}},
     summary="List Script Families",
 )
-async def read_script_family(
+async def list_script_family(
     limit: Optional[int] = 20,
     offset: Optional[int] = 0,
     sort_by: ScriptFamilySortBy = ScriptFamilySortBy.NAME,
@@ -80,26 +80,6 @@ async def read_script_family(
         sort_order=sort_order,
         name=name,
     )
-
-
-@script_families_router.patch(
-    "{script_family_id}",
-    status_code=status.HTTP_200_OK,
-    response_model=ReadScriptFamily,
-    responses={
-        status.HTTP_404_NOT_FOUND: {"model": AlphabetBulkError},
-        status.HTTP_409_CONFLICT: {"model": AlphabetBulkError},
-        status.HTTP_422_UNPROCESSABLE_CONTENT: {"model": AlphabetBulkError},
-    },
-    summary="Update Script Family",
-)
-async def read_script_family(
-    script_family_id: UUID,
-    req: UpdateScriptFamily,
-    sf_service: ScriptFamilyService = Depends(get_script_family_service),
-) -> ReadScriptFamily:
-    result = await sf_service.update(script_family_id=script_family_id, name=req.name)
-    return ReadScriptFamily(id=result.id, name=result.name)
 
 
 @script_families_router.patch(

@@ -30,7 +30,7 @@ class Alphabet(Base):
     __tablename__ = "alphabets"
 
     id = Column(UUID(as_uuid=True), nullable=False, primary_key=True, default=uuid.uuid4)
-    name = Column(String, nullable=False)
+    name = Column(String, nullable=False, unique=True)
     writting_system = Column(Enum(WrittingSystem), nullable=False)
     writting_direction = Column(Enum(WrittingDirection), nullable=False)
     script_family_id = Column(

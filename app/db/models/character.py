@@ -19,7 +19,7 @@ class Character(Base):
     __tablename__ = "characters"
 
     id = Column(UUID(as_uuid=True), nullable=False, primary_key=True, default=uuid.uuid4)
-    alphabet_id = Column(UUID(as_uuid=True),ForeignKey("alphabets.id", ondelete="CASCADE"),nullable=False)
+    alphabet_id = Column(UUID(as_uuid=True),ForeignKey("alphabets.id", ondelete="RESTRICT"),nullable=False)
 
     value = Column(String, nullable=False)
     name = Column(String, nullable=True)
