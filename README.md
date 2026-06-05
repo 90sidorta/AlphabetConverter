@@ -8,6 +8,7 @@
 6. Go to localhost 8081/docs
 
 ## What is this app
-This is a FastAPI backend application for alphabet transliterations. Currently it is not fully developed. There is no client app (but it can be tested with swagger), and no way of adding characters, transliteration systems and transliteration characters. These services will be added in the future. Now there is only demo (you need to seed the db with script that uses factories) with Avestan alphabet with options to convert it to Hoffmann Latin and Simplified Polish Latin. It is also possible to transliterate Hoffmann Latin to Avestan. There are services ready for ScriptFamily and Alphabet.
+This is a FastAPI backend application for alphabet transliterations. Currently it is not fully developed. There is no client app (but it can be tested with swagger), and no way of adding characters, transliteration systems and transliteration characters. These services will be added in the future. Now there is only demo (you need to seed the db with script that uses factories) with Avestan alphabet with options to convert it to Hoffmann Latin and Simplified Polish Latin. It is also possible to transliterate Hoffmann Latin to Avestan. There are services ready for ScriptFamily and Alphabet (so these can be read, listed, created, updated and deleted).
 
 I hope that I will be able to develop the app so it will be possible to use the app as intended, without need to seed the db.
+I will also have to add tests
