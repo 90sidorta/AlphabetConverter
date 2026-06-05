@@ -60,7 +60,12 @@ avestan_alphabet = AlphabetFactory(
 )
 
 print("Creating transliteration system")
-hoffmann_avestan = TransliterationSystemFactory(name="Hoffman", description="Hoffmann transliteration system for Avestan")
+hoffmann_avestan = TransliterationSystemFactory(
+    name="Hoffmann", description="Hoffmann transliteration system for Avestan",
+)
+simplified_polish_avestan = TransliterationSystemFactory(
+    name="Simplified Polish", description="Simplified polish transliteration system for Avestan",
+)
 
 print("Creating characters")
 #region Letters
@@ -458,287 +463,571 @@ double_u_character = CharacterFactory(
 )
 #endregion
 
-print("Creating transliteration characters")
-#region Transliteration
-a_trans = TransliterationCharacterFactory(
+print("Creating transliteration characters for Hoffmann")
+#region Transliteration Hoffmann
+a_trans_h = TransliterationCharacterFactory(
     value="a",
     character=a_character,
     transliteration_system=hoffmann_avestan,
 )
-aa_trans = TransliterationCharacterFactory(
+aa_trans_h = TransliterationCharacterFactory(
     value="ā",
     character=aa_character,
     transliteration_system=hoffmann_avestan,
 )
-ao_trans = TransliterationCharacterFactory(
+ao_trans_h = TransliterationCharacterFactory(
     value="ȧ",
     character=ao_character,
     transliteration_system=hoffmann_avestan,
 )
-aao_trans = TransliterationCharacterFactory(
+aao_trans_h = TransliterationCharacterFactory(
     value="ā̊",
     character=aao_character,
     transliteration_system=hoffmann_avestan,
 )
-an_trans = TransliterationCharacterFactory(
+an_trans_h = TransliterationCharacterFactory(
     value="ą",
     character=an_character,
     transliteration_system=hoffmann_avestan,
 )
-aan_trans = TransliterationCharacterFactory(
+aan_trans_h = TransliterationCharacterFactory(
     value="ą̇",
     character=aan_character,
     transliteration_system=hoffmann_avestan,
 )
-ae_trans = TransliterationCharacterFactory(
+ae_trans_h = TransliterationCharacterFactory(
     value="ə",
     character=ae_character,
     transliteration_system=hoffmann_avestan,
 )
-aee_trans = TransliterationCharacterFactory(
+aee_trans_h = TransliterationCharacterFactory(
     value="ə̄",
     character=aee_character,
     transliteration_system=hoffmann_avestan,
 )
-e_trans = TransliterationCharacterFactory(
+e_trans_h = TransliterationCharacterFactory(
     value="e",
     character=e_character,
     transliteration_system=hoffmann_avestan,
 )
-ee_trans = TransliterationCharacterFactory(
+ee_trans_h = TransliterationCharacterFactory(
     value="ē",
     character=ee_character,
     transliteration_system=hoffmann_avestan,
 )
-o_trans = TransliterationCharacterFactory(
+o_trans_h = TransliterationCharacterFactory(
     value="o",
     character=o_character,
     transliteration_system=hoffmann_avestan,
 )
-oo_trans = TransliterationCharacterFactory(
+oo_trans_h = TransliterationCharacterFactory(
     value="ō",
     character=oo_character,
     transliteration_system=hoffmann_avestan,
 )
-i_trans = TransliterationCharacterFactory(
+i_trans_h = TransliterationCharacterFactory(
     value="i",
     character=i_character,
     transliteration_system=hoffmann_avestan,
 )
-ii_trans = TransliterationCharacterFactory(
+ii_trans_h = TransliterationCharacterFactory(
     value="ī",
     character=ii_character,
     transliteration_system=hoffmann_avestan,
 )
-u_trans = TransliterationCharacterFactory(
+u_trans_h = TransliterationCharacterFactory(
     value="u",
     character=u_character,
     transliteration_system=hoffmann_avestan,
 )
-uu_trans = TransliterationCharacterFactory(
+uu_trans_h = TransliterationCharacterFactory(
     value="ū",
     character=uu_character,
     transliteration_system=hoffmann_avestan,
 )
-ke_trans = TransliterationCharacterFactory(
+ke_trans_h = TransliterationCharacterFactory(
     value="k",
     character=ke_character,
     transliteration_system=hoffmann_avestan,
 )
-xe_trans = TransliterationCharacterFactory(
+xe_trans_h = TransliterationCharacterFactory(
     value="x",
     character=xe_character,
     transliteration_system=hoffmann_avestan,
 )
-xye_trans = TransliterationCharacterFactory(
+xye_trans_h = TransliterationCharacterFactory(
     value="x́",
     character=xye_character,
     transliteration_system=hoffmann_avestan,
 )
-xve_trans = TransliterationCharacterFactory(
+xve_trans_h = TransliterationCharacterFactory(
     value="xᵛ",
     character=xve_character,
     transliteration_system=hoffmann_avestan,
 )
-ge_trans = TransliterationCharacterFactory(
+ge_trans_h = TransliterationCharacterFactory(
     value="g",
     character=ge_character,
     transliteration_system=hoffmann_avestan,
 )
-gge_trans = TransliterationCharacterFactory(
+gge_trans_h = TransliterationCharacterFactory(
     value="ġ",
     character=gge_character,
     transliteration_system=hoffmann_avestan,
 )
-ghe_trans = TransliterationCharacterFactory(
+ghe_trans_h = TransliterationCharacterFactory(
     value="γ",
     character=ghe_character,
     transliteration_system=hoffmann_avestan,
 )
-ce_trans = TransliterationCharacterFactory(
+ce_trans_h = TransliterationCharacterFactory(
     value="c",
     character=ce_character,
     transliteration_system=hoffmann_avestan,
 )
-je_trans = TransliterationCharacterFactory(
+je_trans_h = TransliterationCharacterFactory(
     value="j",
     character=je_character,
     transliteration_system=hoffmann_avestan,
 )
-te_trans = TransliterationCharacterFactory(
+te_trans_h = TransliterationCharacterFactory(
     value="t",
     character=te_character,
     transliteration_system=hoffmann_avestan,
 )
-the_trans = TransliterationCharacterFactory(
+the_trans_h = TransliterationCharacterFactory(
     value="θ",
     character=the_character,
     transliteration_system=hoffmann_avestan,
 )
-de_trans = TransliterationCharacterFactory(
+de_trans_h = TransliterationCharacterFactory(
     value="d",
     character=de_character,
     transliteration_system=hoffmann_avestan,
 )
-dhe_trans = TransliterationCharacterFactory(
+dhe_trans_h = TransliterationCharacterFactory(
     value="δ",
     character=dhe_character,
     transliteration_system=hoffmann_avestan,
 )
-tte_trans = TransliterationCharacterFactory(
+tte_trans_h = TransliterationCharacterFactory(
     value="t̰",
     character=tte_character,
     transliteration_system=hoffmann_avestan,
 )
-pe_trans = TransliterationCharacterFactory(
+pe_trans_h = TransliterationCharacterFactory(
     value="p",
     character=pe_character,
     transliteration_system=hoffmann_avestan,
 )
-fe_trans = TransliterationCharacterFactory(
+fe_trans_h = TransliterationCharacterFactory(
     value="f",
     character=fe_character,
     transliteration_system=hoffmann_avestan,
 )
-be_trans = TransliterationCharacterFactory(
+be_trans_h = TransliterationCharacterFactory(
     value="b",
     character=be_character,
     transliteration_system=hoffmann_avestan,
 )
-bhe_trans = TransliterationCharacterFactory(
+bhe_trans_h = TransliterationCharacterFactory(
     value="β",
     character=bhe_character,
     transliteration_system=hoffmann_avestan,
 )
-nge_trans = TransliterationCharacterFactory(
+nge_trans_h = TransliterationCharacterFactory(
     value="ŋ",
     character=nge_character,
     transliteration_system=hoffmann_avestan,
 )
-ngye_trans = TransliterationCharacterFactory(
+ngye_trans_h = TransliterationCharacterFactory(
     value="ŋ́",
     character=ngye_character,
     transliteration_system=hoffmann_avestan,
 )
-ngve_trans = TransliterationCharacterFactory(
+ngve_trans_h = TransliterationCharacterFactory(
     value="ŋᵛ",
     character=ngve_character,
     transliteration_system=hoffmann_avestan,
 )
-ne_trans = TransliterationCharacterFactory(
+ne_trans_h = TransliterationCharacterFactory(
     value="n",
     character=ne_character,
     transliteration_system=hoffmann_avestan,
 )
-nye_trans = TransliterationCharacterFactory(
+nye_trans_h = TransliterationCharacterFactory(
     value="ń",
     character=nye_character,
     transliteration_system=hoffmann_avestan,
 )
-nne_trans = TransliterationCharacterFactory(
+nne_trans_h = TransliterationCharacterFactory(
     value="ṇ",
     character=nne_character,
     transliteration_system=hoffmann_avestan,
 )
-me_trans = TransliterationCharacterFactory(
+me_trans_h = TransliterationCharacterFactory(
     value="m",
     character=me_character,
     transliteration_system=hoffmann_avestan,
 )
-hme_trans = TransliterationCharacterFactory(
+hme_trans_h = TransliterationCharacterFactory(
     value="m̨",
     character=hme_character,
     transliteration_system=hoffmann_avestan,
 )
-yye_trans = TransliterationCharacterFactory(
+yye_trans_h = TransliterationCharacterFactory(
     value="ẏ",
     character=yye_character,
     transliteration_system=hoffmann_avestan,
 )
-ye_trans = TransliterationCharacterFactory(
+ye_trans_h = TransliterationCharacterFactory(
     value="y",
     character=ye_character,
     transliteration_system=hoffmann_avestan,
 )
-ve_trans = TransliterationCharacterFactory(
+ve_trans_h = TransliterationCharacterFactory(
     value="v",
     character=ve_character,
     transliteration_system=hoffmann_avestan,
 )
-re_trans = TransliterationCharacterFactory(
+re_trans_h = TransliterationCharacterFactory(
     value="r",
     character=re_character,
     transliteration_system=hoffmann_avestan,
 )
-se_trans = TransliterationCharacterFactory(
+se_trans_h = TransliterationCharacterFactory(
     value="s",
     character=se_character,
     transliteration_system=hoffmann_avestan,
 )
-ze_trans = TransliterationCharacterFactory(
+ze_trans_h = TransliterationCharacterFactory(
     value="z",
     character=ze_character,
     transliteration_system=hoffmann_avestan,
 )
-she_trans = TransliterationCharacterFactory(
+she_trans_h = TransliterationCharacterFactory(
     value="š",
     character=she_character,
     transliteration_system=hoffmann_avestan,
 )
-zhe_trans = TransliterationCharacterFactory(
+zhe_trans_h = TransliterationCharacterFactory(
     value="ž",
     character=zhe_character,
     transliteration_system=hoffmann_avestan,
 )
-shye_trans = TransliterationCharacterFactory(
+shye_trans_h = TransliterationCharacterFactory(
     value="š́",
     character=shye_character,
     transliteration_system=hoffmann_avestan,
 )
-sshe_trans = TransliterationCharacterFactory(
+sshe_trans_h = TransliterationCharacterFactory(
     value="ṣ̌",
     character=sshe_character,
     transliteration_system=hoffmann_avestan,
 )
-he_trans = TransliterationCharacterFactory(
+he_trans_h = TransliterationCharacterFactory(
     value="h",
     character=he_character,
     transliteration_system=hoffmann_avestan,
 )
-ii_sequence_trans = TransliterationCharacterFactory(
+ii_sequence_trans_h = TransliterationCharacterFactory(
     value="ii",
     character=double_i_character,
     transliteration_system=hoffmann_avestan,
 )
-uu_sequence_trans = TransliterationCharacterFactory(
+uu_sequence_trans_h = TransliterationCharacterFactory(
     value="uu",
     character=double_u_character,
     transliteration_system=hoffmann_avestan,
 )
-le_trans = TransliterationCharacterFactory(
+le_trans_h = TransliterationCharacterFactory(
     value="l",
     character=le_character,
     transliteration_system=hoffmann_avestan,
+)
+#endregion
+
+print("Creating transliteration characters for Simplified Polish")
+#region Transliteration Simplified Polish
+a_trans_pl = TransliterationCharacterFactory(
+    value="a",
+    character=a_character,
+    transliteration_system=simplified_polish_avestan,
+)
+aa_trans_pl = TransliterationCharacterFactory(
+    value="a",
+    character=aa_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ao_trans_pl = TransliterationCharacterFactory(
+    value="o",
+    character=ao_character,
+    transliteration_system=simplified_polish_avestan,
+)
+aao_trans_pl = TransliterationCharacterFactory(
+    value="o",
+    character=aao_character,
+    transliteration_system=simplified_polish_avestan,
+)
+an_trans_pl = TransliterationCharacterFactory(
+    value="ą",
+    character=an_character,
+    transliteration_system=simplified_polish_avestan,
+)
+aan_trans_pl = TransliterationCharacterFactory(
+    value="ą",
+    character=aan_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ae_trans_pl = TransliterationCharacterFactory(
+    value="e",
+    character=ae_character,
+    transliteration_system=simplified_polish_avestan,
+)
+aee_trans_pl = TransliterationCharacterFactory(
+    value="e",
+    character=aee_character,
+    transliteration_system=simplified_polish_avestan,
+)
+e_trans_pl = TransliterationCharacterFactory(
+    value="e",
+    character=e_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ee_trans_pl = TransliterationCharacterFactory(
+    value="e",
+    character=ee_character,
+    transliteration_system=simplified_polish_avestan,
+)
+o_trans_pl = TransliterationCharacterFactory(
+    value="o",
+    character=o_character,
+    transliteration_system=simplified_polish_avestan,
+)
+oo_trans_pl = TransliterationCharacterFactory(
+    value="o",
+    character=oo_character,
+    transliteration_system=simplified_polish_avestan,
+)
+i_trans_pl = TransliterationCharacterFactory(
+    value="i",
+    character=i_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ii_trans_pl = TransliterationCharacterFactory(
+    value="i",
+    character=ii_character,
+    transliteration_system=simplified_polish_avestan,
+)
+u_trans_pl = TransliterationCharacterFactory(
+    value="u",
+    character=u_character,
+    transliteration_system=simplified_polish_avestan,
+)
+uu_trans_pl = TransliterationCharacterFactory(
+    value="u",
+    character=uu_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ke_trans_pl = TransliterationCharacterFactory(
+    value="k",
+    character=ke_character,
+    transliteration_system=simplified_polish_avestan,
+)
+xe_trans_pl = TransliterationCharacterFactory(
+    value="ch",
+    character=xe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+xye_trans_pl = TransliterationCharacterFactory(
+    value="chj",
+    character=xye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+xve_trans_pl = TransliterationCharacterFactory(
+    value="chw",
+    character=xve_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ge_trans_pl = TransliterationCharacterFactory(
+    value="g",
+    character=ge_character,
+    transliteration_system=simplified_polish_avestan,
+)
+gge_trans_pl = TransliterationCharacterFactory(
+    value="gj",
+    character=gge_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ghe_trans_pl = TransliterationCharacterFactory(
+    value="gh",
+    character=ghe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ce_trans_pl = TransliterationCharacterFactory(
+    value="cz",
+    character=ce_character,
+    transliteration_system=simplified_polish_avestan,
+)
+je_trans_pl = TransliterationCharacterFactory(
+    value="dż",
+    character=je_character,
+    transliteration_system=simplified_polish_avestan,
+)
+te_trans_pl = TransliterationCharacterFactory(
+    value="t",
+    character=te_character,
+    transliteration_system=simplified_polish_avestan,
+)
+the_trans_pl = TransliterationCharacterFactory(
+    value="th",
+    character=the_character,
+    transliteration_system=simplified_polish_avestan,
+)
+de_trans_pl = TransliterationCharacterFactory(
+    value="d",
+    character=de_character,
+    transliteration_system=simplified_polish_avestan,
+)
+dhe_trans_pl = TransliterationCharacterFactory(
+    value="dh",
+    character=dhe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+tte_trans_pl = TransliterationCharacterFactory(
+    value="t",
+    character=tte_character,
+    transliteration_system=simplified_polish_avestan,
+)
+pe_trans_pl = TransliterationCharacterFactory(
+    value="p",
+    character=pe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+fe_trans_pl = TransliterationCharacterFactory(
+    value="f",
+    character=fe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+be_trans_pl = TransliterationCharacterFactory(
+    value="b",
+    character=be_character,
+    transliteration_system=simplified_polish_avestan,
+)
+bhe_trans_pl = TransliterationCharacterFactory(
+    value="bh",
+    character=bhe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+nge_trans_pl = TransliterationCharacterFactory(
+    value="ng",
+    character=nge_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ngye_trans_pl = TransliterationCharacterFactory(
+    value="ngj",
+    character=ngye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ngve_trans_pl = TransliterationCharacterFactory(
+    value="ngw",
+    character=ngve_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ne_trans_pl = TransliterationCharacterFactory(
+    value="n",
+    character=ne_character,
+    transliteration_system=simplified_polish_avestan,
+)
+nye_trans_pl = TransliterationCharacterFactory(
+    value="ń",
+    character=nye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+nne_trans_pl = TransliterationCharacterFactory(
+    value="n",
+    character=nne_character,
+    transliteration_system=simplified_polish_avestan,
+)
+me_trans_pl = TransliterationCharacterFactory(
+    value="m",
+    character=me_character,
+    transliteration_system=simplified_polish_avestan,
+)
+hme_trans_pl = TransliterationCharacterFactory(
+    value="mh",
+    character=hme_character,
+    transliteration_system=simplified_polish_avestan,
+)
+yye_trans_pl = TransliterationCharacterFactory(
+    value="i",
+    character=yye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ye_trans_pl = TransliterationCharacterFactory(
+    value="j",
+    character=ye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ve_trans_pl = TransliterationCharacterFactory(
+    value="w",
+    character=ve_character,
+    transliteration_system=simplified_polish_avestan,
+)
+re_trans_pl = TransliterationCharacterFactory(
+    value="r",
+    character=re_character,
+    transliteration_system=simplified_polish_avestan,
+)
+se_trans_pl = TransliterationCharacterFactory(
+    value="s",
+    character=se_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ze_trans_pl = TransliterationCharacterFactory(
+    value="z",
+    character=ze_character,
+    transliteration_system=simplified_polish_avestan,
+)
+she_trans_pl = TransliterationCharacterFactory(
+    value="sz",
+    character=she_character,
+    transliteration_system=simplified_polish_avestan,
+)
+zhe_trans_pl = TransliterationCharacterFactory(
+    value="ż",
+    character=zhe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+shye_trans_pl = TransliterationCharacterFactory(
+    value="szj",
+    character=shye_character,
+    transliteration_system=simplified_polish_avestan,
+)
+sshe_trans_pl = TransliterationCharacterFactory(
+    value="sz",
+    character=sshe_character,
+    transliteration_system=simplified_polish_avestan,
+)
+he_trans_pl = TransliterationCharacterFactory(
+    value="h",
+    character=he_character,
+    transliteration_system=simplified_polish_avestan,
+)
+ii_sequence_trans_pl = TransliterationCharacterFactory(
+    value="ii",
+    character=double_i_character,
+    transliteration_system=simplified_polish_avestan,
+)
+uu_sequence_trans_pl = TransliterationCharacterFactory(
+    value="ó",
+    character=double_u_character,
+    transliteration_system=simplified_polish_avestan,
+)
+le_trans_pl = TransliterationCharacterFactory(
+    value="l",
+    character=le_character,
+    transliteration_system=simplified_polish_avestan,
 )
 #endregion
 
